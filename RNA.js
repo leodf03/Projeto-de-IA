@@ -61,7 +61,7 @@ class RNA {
         return list;
     }
 
-    mutate(rate = 1) {
+    mutate(rate = 0.2) {
         for (const level of this.levelList) {
             for (const neuron of level) neuron.mutate(rate);
         }
